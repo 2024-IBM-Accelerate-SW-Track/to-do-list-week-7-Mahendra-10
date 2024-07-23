@@ -222,7 +222,7 @@ This Login form will ask users to login before showing them the TODO app. It rel
 ```
 import axios from "axios";
 
-const baseUrl = "http://localhost:8080";
+const baseUrl = "http://localhost:8081";
 
 export const authenticate = async (username, password) => {
     try {
@@ -259,7 +259,7 @@ For example, on the call to `/item`:
 ```
     Axios({
       method: "POST",
-      url: "http://localhost:8080/item",
+      url: "http://localhost:8082/item",
       data: {jsonObject},
       headers: {
         "Content-Type": "application/json"
